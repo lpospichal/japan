@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#f7f4ef" />
+    <title>Japan Family Companion</title>
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" href="./assets/icon-192.png" />
+    <link rel="apple-touch-icon" href="./assets/icon-192.png" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Shared family trip workspace</p>
+          <h1>Japan Family Companion</h1>
+        </div>
+        <button id="installBtn" class="ghost hidden">Install</button>
+      </header>
+
+      <main class="content">
+        <section id="todayView" class="view active"></section>
+        <section id="timelineView" class="view"></section>
+        <section id="ticketsView" class="view"></section>
+        <section id="travelView" class="view"></section>
+        <section id="exploreView" class="view"></section>
+        <section id="updatesView" class="view"></section>
+        <section id="helpView" class="view"></section>
+      </main>
+
+      <nav class="bottomnav">
+        <button data-view="todayView" class="active">Today</button>
+        <button data-view="timelineView">Timeline</button>
+        <button data-view="ticketsView">Tickets</button>
+        <button data-view="travelView">Travel</button>
+        <button data-view="exploreView">Explore</button>
+        <button data-view="updatesView">Updates</button>
+        <button data-view="helpView">Help</button>
+      </nav>
+    </div>
+    <script src="./app.js" defer></script>
+  </body>
+</html>
